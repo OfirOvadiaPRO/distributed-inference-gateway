@@ -1,0 +1,15 @@
+[project]
+name = "distributed-inference-gateway"
+version = "0.1.0"
+description = "High-throughput asynchronous inference gateway"
+authors = [{name = "Ofir Ovadia"}]
+dependencies = [
+    "fastapi>=0.100.0",
+    "uvicorn>=0.22.0",
+    "pydantic-settings>=2.0.0",
+    "httpx>=0.24.0"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
